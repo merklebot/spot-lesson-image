@@ -10,7 +10,7 @@ ARG GitCommit
 RUN echo "I am running on $BUILDPLATFORM, building for $TARGETPLATFORM" 
 
 
-RUN apt-get update && apt-get install -y ffmpeg alsa-utils
+RUN apt-get update && apt-get install -y nano
 
 ENV PYTHONDONTWRITEBYTECODE 1
 ENV PYTHONUNBUFFERED 1
