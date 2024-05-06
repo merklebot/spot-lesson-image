@@ -1,6 +1,4 @@
-opencv-python
-numpy
-ffmpeg-python
-Pillow
-requests
-reachy-sdk
+bosdyn-client
+bosdyn-mission
+bosdyn-choreography-client
+scipy
