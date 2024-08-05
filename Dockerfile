@@ -10,7 +10,8 @@ ARG GitCommit
 RUN echo "I am running on $BUILDPLATFORM, building for $TARGETPLATFORM" 
 
 
-RUN apt-get update && apt-get install -y nano
+RUN apt-get update && apt-get install -y nano git
+RUN git clone https://github.com/boston-dynamics/spot-sdk.git
 
 ENV PYTHONDONTWRITEBYTECODE 1
 ENV PYTHONUNBUFFERED 1
